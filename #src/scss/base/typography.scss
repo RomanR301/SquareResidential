@@ -57,6 +57,26 @@
 .section-title {
   @include fontSize(26, 45);
   line-height: 1.19;
+  color: $defaultText;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 38%;
+    top: calc(50% - 1px);
+  }
+
+  &:before {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), #0D3146;
+    left: 0;
+  }
+  &:after {
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #0D3146;
+    right: 0;
+  }
 }
 
 .icon-envelope:before {

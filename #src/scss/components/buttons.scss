@@ -2,10 +2,29 @@
 @import "../abstracts/variables";
 
 .btn {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 15px 45px;
+  display: inline-block;
+  cursor: pointer;
+  @include transition(.3);
   &-primary {
-
+    color: $defaultText;
+    border: 2px solid $defaultText;
+    background: $whiteColor;
+    &:hover {
+      background: $defaultText;
+      color: $whiteColor;
+    }
   }
   &-secondary {
-    
+    border: 2px solid $whiteColor;
+    color: $whiteColor;
+    background: transparent;
+    &:hover {
+      background: $whiteColor;
+      color: $defaultText;
+    }
   }
 }
