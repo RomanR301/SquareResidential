@@ -1,0 +1,73 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.--semibold {
+  font-weight: 600;
+}
+
+.--regular {
+  font-weight: 400;
+}
+
+.--medium {
+  font-weight: 500;
+}
+
+.--bold {
+  font-weight: 700;
+}
+
+.--uppercase {
+  text-transform: uppercase;
+}
+
+.heading-1 {
+  @include fontSize(30, 55);
+  line-height: 1.19;
+}
+
+.heading-2 {
+  @include fontSize(26, 45);
+  line-height: 1.19;
+}
+
+.heading-3 {
+  @include fontSize(22,30);
+  line-height: 1.19;
+}
+
+.heading-4 {
+  @include fontSize(20, 24);
+  line-height: 1.2;
+}
+
+.heading-5 {
+  @include fontSize(18, 20);
+  line-height: 1.2;
+}
+
+.section-title {
+  @include fontSize(26, 45);
+  line-height: 1.19;
+}
+
+.icon-envelope:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-marker:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e902";
+  color: #fff;
+}

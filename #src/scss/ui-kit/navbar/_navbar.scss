@@ -1,0 +1,71 @@
+@import "./#src/scss/abstracts/mixins.scss";
+@import "./#src/scss/abstracts/variables.scss";
+
+
+.navbar {
+
+}
+
+.menu {
+  &-item {
+    & a {
+      display: block;
+      padding: 27px 12.5px;
+    }
+  }
+}
+
+
+.hamburger {
+  display: none;
+  width: 60px;
+  margin-right: -15px;
+  height: 100%;
+  position: relative;
+  @media (max-width: $breakpoint-xl) {
+    display: block;
+  } 
+  & span {
+    position: absolute;
+    right: 15px;
+    display: block;
+    width: 25px;
+    background: $whiteColor;
+    height: 3px;
+    border-radius: 10px;
+    @include transition(.3);
+  }
+  & span:nth-child(1) {
+    top: calc(50% - 8.5px);
+  }
+  & span:nth-child(2) {
+    top: calc(50% - 2.5px);
+  }
+  & span:nth-child(3) {
+    top: calc(50% - 2.5px);
+  }
+  & span:nth-child(4) {
+    top: calc(50% + 3.5px);
+  }
+  &.open {
+    & span {
+      // background: $purpleColor;
+    }
+    & span:nth-child(1) {
+      top: calc(50% - 2.5px);
+      width: 0%;
+      right: 50%;
+    }
+    & span:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    & span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+    & span:nth-child(4) {
+      top: calc(50% - 2.5px);
+      width: 0;
+      right: 50%;
+    }
+  }
+}
