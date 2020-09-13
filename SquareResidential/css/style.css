@@ -493,7 +493,7 @@ input[type=number] {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 15px;
 }
@@ -1222,6 +1222,38 @@ input[type=number] {
     -ms-flex: 0 0 100.0%;
     flex: 0 0 100.0%;
     max-width: 100.0%;
+  }
+}
+
+@media (min-width: 1800px) {
+  body {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 18px 54px;
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+
+  .header-logo {
+    width: 220px;
+  }
+
+  .header-btn {
+    font-size: 18px;
+  }
+
+  .main-screen__box {
+    padding: 50px;
+    max-width: 820pxbig;
+  }
+
+  .portfolio__item {
+    height: 500px;
   }
 }
 

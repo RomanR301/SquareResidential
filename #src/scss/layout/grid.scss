@@ -6,9 +6,12 @@
 // }
 
 .container {
-  max-width: 1110px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 15px;
+  @media (min-width: $breakpoint-xxl) {
+    max-width: 1440px;
+  }
 }
 
 .container-fluid {

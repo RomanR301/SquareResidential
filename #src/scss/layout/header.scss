@@ -1,13 +1,6 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-// .body-padding {
-//   padding-top: 70px;
-//   @media (min-width: $breakpoint-xxl) {
-//     padding-top: 90px;
-//   }
-// }
-
 .header {
   position: fixed;
   left: 0;
@@ -19,6 +12,9 @@
   &-logo {
     display: flex;
     width: 190px;
+    @media (min-width: $breakpoint-xxl) {
+      width: 220px;
+    }
   }
   &-btn {
     font-weight: 600;
@@ -30,6 +26,9 @@
     color: $whiteColor;
     @include transition(.3);
     cursor: pointer;
+    @media (min-width: $breakpoint-xxl) {
+      font-size: 18px;
+    }
     &:hover {
       background: transparent;
       border: 2px solid $whiteColor;
