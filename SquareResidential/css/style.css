@@ -915,6 +915,10 @@ input[type=number] {
      object-position: right;
 }
 
+.main-screen img {
+  display: none;
+}
+
 .main-screen__box {
   position: absolute;
   background: rgba(13, 49, 70, 0.9);
@@ -1400,7 +1404,15 @@ input[type=number] {
 
 @media (max-width: 1150px) {
   .main-screen video {
+    display: none;
+  }
+
+  .main-screen img {
+    display: block;
+    width: 100%;
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
