@@ -1412,6 +1412,13 @@ input[type=number] {
     right: -120vw;
     top: 0;
     background: #0D3146;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -1428,13 +1435,12 @@ input[type=number] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    margin: 0;
+    margin: 50px 0;
   }
 
   .menu-item a:hover:before {
@@ -1464,8 +1470,6 @@ input[type=number] {
   .header-btn {
     border-color: #fff;
     width: 100%;
-    position: absolute;
-    bottom: 0;
   }
 }
 
