@@ -67,6 +67,12 @@
     height: 2px;
     width: 38%;
     top: calc(50% - 1px);
+    @media (max-width: $breakpoint-xl) {
+      width: 33%;
+    }
+    @media (max-width: $breakpoint-md) {
+      width: 16%;
+    }
   }
 
   &:before {

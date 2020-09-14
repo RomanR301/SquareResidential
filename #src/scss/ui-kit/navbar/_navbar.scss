@@ -3,10 +3,32 @@
 
 
 .navbar {
-
+  display: flex;
+  align-items: center;
+  @media (max-width: 1100px) {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: -120vw;
+    top: 0;
+    background: $defaultText;
+    @include transition(.3);
+    &.active {
+      right: 0;
+    }
+  }
 }
 
 .menu {
+  margin-right: 20px;
+  @media (max-width: 1100px) {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
   &-item {
     margin: 0 10px;
     & a {
@@ -26,6 +48,9 @@
       &:hover {
         &:before {
           width: 100%;
+          @media (max-width: 1100px){
+            width: 0;
+          }
         }
       }
     }
@@ -38,8 +63,11 @@
   width: 60px;
   margin-right: -15px;
   height: 100%;
-  position: relative;
-  @media (max-width: $breakpoint-xl) {
+  position: absolute;
+  z-index: 99;
+  right: 15px;
+  cursor: pointer;
+  @media (max-width: 1100px) {
     display: block;
   } 
   & span {
@@ -65,9 +93,6 @@
     top: calc(50% + 3.5px);
   }
   &.open {
-    & span {
-      // background: $purpleColor;
-    }
     & span:nth-child(1) {
       top: calc(50% - 2.5px);
       width: 0%;

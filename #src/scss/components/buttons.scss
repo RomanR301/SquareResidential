@@ -13,6 +13,9 @@
     padding: 18px 54px;
     font-size: 18px;
   }
+  @media (max-width: $breakpoint-md) {
+    padding: 10px 30px;
+  }
   &-primary {
     color: $defaultText;
     border: 2px solid $defaultText;
@@ -29,6 +32,24 @@
     &:hover {
       background: $whiteColor;
       color: $defaultText;
+    }
+  }
+  &-link {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      background: $whiteColor;
+      bottom: -1px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      @include transition(.3);
+    }
+    &:hover {
+      &:before {
+        width: 0;
+      }
     }
   }
 }

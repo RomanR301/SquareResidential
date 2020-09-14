@@ -1,3 +1,109 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.footer {
+  background: #0D3146;  
+  padding: 40px 0;
+  overflow: hidden;
+  @media (max-width: $breakpoint-lg) {
+    padding: 20px 0;
+  }
+  &-row {
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @media (max-width: $breakpoint-lg) {
+      & .col-xs-12 {
+        margin-bottom: 36px;
+      }
+    }
+  }
+  &-title {
+    font-family: 'Mont', sans-serif;
+    margin-bottom: 40px;
+    @media (max-width: $breakpoint-lg) {
+      margin-bottom: 18px;
+    }
+  }
+  &-logo {
+    max-width: 250px;
+    margin-bottom: 25px;
+  }
+  & .white-line {
+    margin-bottom: 24px;
+    width: 120%;
+    position: absolute;
+    top: 45px;
+    @media (max-width: $breakpoint-lg) {
+      top: unset;
+      bottom: -10px;
+    }
+    &:before {
+      right: 0;
+    }
+  }
+
+  &-description {
+    @media (max-width: $breakpoint-lg) {
+      max-width: 60%;
+    }
+    @media (max-width: $breakpoint-sm) {
+      max-width: 100%;
+    }
+    & strong {
+      font-weight: 600;
+    }
+  }
+  &-list {
+    & li {
+      margin-bottom: 13px;
+      & a {
+        font-weight: 600;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          background: $redColor;
+          bottom: -1px;
+          height: 1px;
+          width: 0;
+          @include transition(.3);
+        }
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &-contacts {
+    & li {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      & i {
+        margin-right: 12px;
+        &:before {
+          @include transition(.3);
+          font-size: 24px;
+        }
+      }
+      &:hover {
+        & i:before {
+          color: $redColor;
+        }
+      }
+    }
+  }
+  &-copyright {
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $breakpoint-sm) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      & .copyright-privacy {
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
