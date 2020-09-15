@@ -104,7 +104,7 @@
       & a {
         font-weight: 600;
         position: relative;
-        display: block;
+        display: inline-block;
         &:before {
           content: '';
           position: absolute;

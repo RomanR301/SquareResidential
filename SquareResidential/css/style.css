@@ -838,7 +838,7 @@ input[type=number] {
 .footer-list li a {
   font-weight: 600;
   position: relative;
-  display: block;
+  display: inline-block;
 }
 
 .footer-list li a:before {
