@@ -169,6 +169,7 @@ video {
 body {
   position: relative;
   color: #ffffff;
+  background: #f9f9f9;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -938,9 +939,30 @@ input[type=number] {
   margin-bottom: 27px;
 }
 
+.text-block-paragraph:last-child {
+  margin: 0;
+}
+
+.text-block.block-blue {
+  background: #1C5B80;
+  margin: 0;
+  padding: 100px 0;
+}
+
+.text-block.block-blue .section-title,
+.text-block.block-blue .text-block-paragraph {
+  color: #ffffff;
+}
+
+.text-block.block-blue .section-title:before,
+.text-block.block-blue .text-block-paragraph:before {
+  background: #ffffff;
+}
+
 .portfolio__item {
   position: relative;
   height: 380px;
+  overflow: hidden;
 }
 
 .portfolio__item_image {
@@ -954,8 +976,11 @@ input[type=number] {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
+  right: 0;
   top: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .portfolio__item_image img {
@@ -987,7 +1012,10 @@ input[type=number] {
 .portfolio__item_title h3 {
   margin-bottom: 20px;
   text-align: center;
-  padding: 0 5px;
+  padding: 0 15px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .portfolio-view-all {
@@ -1507,6 +1535,10 @@ input[type=number] {
 
   .main-screen__box {
     padding: 30px;
+  }
+
+  .text-block.block-blue {
+    padding: 40px 0;
   }
 
   .portfolio-view-all {
