@@ -3,21 +3,18 @@
 
 .footer {
   background: #0D3146;  
-  padding: 40px 0;
+  padding: 30px 0;
   overflow: hidden;
   @media (max-width: $breakpoint-lg) {
     padding: 20px 0;
   }
   &-row {
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     @media (max-width: $breakpoint-lg) {
       & .col-xs-12 {
         margin-bottom: 36px;
       }
-    }
-    @media (max-width: $breakpoint-md) {
-      // flex-direction: column;
     }
     & .footer-column:nth-child(1) {
       flex: 0 0 30%;
@@ -29,28 +26,24 @@
       }
     }
     & .footer-column:nth-child(2), & .footer-column:nth-child(3) {
-      & .footer-list {
-        position: relative;
-        &:before {
-          content: '';
-          background: $whiteColor;
-          position: absolute;
-          width: 2px;
-          height: 130%;
-          top: -15%;
-          left: -30px;
-          @media (max-width: 1100px) {
-            display: none;
-          }
+      position: relative;
+      &:before {
+        content: '';
+        background: $whiteColor;
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        top: 0;
+        left: -45px;
+        @media (max-width: 1100px) {
+          display: none;
         }
       }
     }
     & .footer-column:nth-child(3) {
-      & .footer-list {
-        &:before {
-          left: unset;
-          right: -30px;
-        }
+      &:before {
+        left: unset;
+        right: -45px;
       }
     }
   }
@@ -64,8 +57,7 @@
     }
   }
   &-title {
-    font-family: 'Mont', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     @media (max-width: $breakpoint-lg) {
       margin-bottom: 20px;
     }
@@ -79,15 +71,16 @@
         width: 100%;
         height: 2px;
         bottom: -1px;
-
       }
     }
   }
   &-logo {
-    max-width: 250px;
-    margin-bottom: 25px;
+    max-width: 200px;
+    margin-bottom: 15px;
   }
   &-description {
+    line-height: 220%;
+    font-size: 12px;
     @media (max-width: $breakpoint-lg) {
       max-width: 100%;
     }
@@ -97,19 +90,20 @@
   }
   &-list {
     & li {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       @media (max-width: $breakpoint-sm) {
-        margin-bottom: 14px;
+        margin-bottom: 4px;
       }
       & a {
-        font-weight: 600;
+        font-weight: 400;
         position: relative;
         display: inline-block;
+        font-size: 12px;
         &:before {
           content: '';
           position: absolute;
           background: $redColor;
-          bottom: -1px;
+          bottom: 0;
           height: 1px;
           width: 0;
           @include transition(.3);

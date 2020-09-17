@@ -10,6 +10,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Square Residential</title>
+  <style type="text/css">
+    @font-face {
+      font-family: altivo;
+      src: url(https://use.typekit.net/af/3bd11e/00000000000000003b9b0285/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff2"), url(https://use.typekit.net/af/3bd11e/00000000000000003b9b0285/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff"), url(https://use.typekit.net/af/3bd11e/00000000000000003b9b0285/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("opentype");
+      font-weight: 100;
+      font-style: normal;
+      font-display: auto;
+    }
+
+    @font-face {
+      font-family: altivo;
+      src: url(https://use.typekit.net/af/10dcb3/00000000000000003b9b0286/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3) format("woff2"), url(https://use.typekit.net/af/10dcb3/00000000000000003b9b0286/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3) format("woff"), url(https://use.typekit.net/af/10dcb3/00000000000000003b9b0286/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3) format("opentype");
+      font-weight: 200;
+      font-style: normal;
+      font-display: auto;
+    }
+
+    @font-face {
+      font-family: altivo;
+      src: url(https://use.typekit.net/af/de8583/00000000000000003b9b0288/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"), url(https://use.typekit.net/af/de8583/00000000000000003b9b0288/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"), url(https://use.typekit.net/af/de8583/00000000000000003b9b0288/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");
+      font-weight: 300;
+      font-style: normal;
+      font-display: auto;
+    }
+
+    @font-face {
+      font-family: altivo;
+      src: url(https://use.typekit.net/af/eb8ea1/00000000000000003b9b028a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/eb8ea1/00000000000000003b9b028a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/eb8ea1/00000000000000003b9b028a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: auto;
+    }
+    @font-face {
+      font-family: altivo;
+      src: url(https://use.typekit.net/af/237a83/00000000000000003b9b028c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"), url(https://use.typekit.net/af/237a83/00000000000000003b9b028c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"), url(https://use.typekit.net/af/237a83/00000000000000003b9b028c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: auto;
+    }
+
+    @font-face {
+      font-family: altivo;
+      src: url(https://use.typekit.net/af/f4255a/00000000000000003b9b028e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/f4255a/00000000000000003b9b028e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/f4255a/00000000000000003b9b028e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: auto;
+    }
+
+  </style>
 </head>
 
 
@@ -23,16 +72,16 @@
         <div class="navbar">
           <ul class="menu d-flex">
             <li class="menu-item">
-              <a href="#">HOME</a>
+              <a href="/">HOME</a>
             </li>
             <li class="menu-item">
-              <a href="#">ABOUT</a>
+              <a href="about.html">ABOUT</a>
             </li>
             <li class="menu-item">
-              <a href="#">DEVELOPMENT</a>
+              <a href="developments.html">DEVELOPMENT</a>
             </li>
             <li class="menu-item">
-              <a href="#">INVESTMENTS</a>
+              <a href="investments.html">INVESTMENTS</a>
             </li>
             <li class="menu-item">
               <a href="#">ACQUISITIONS</a>

@@ -1,0 +1,39 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.developments-page  {
+  & .portfolio {
+    margin-bottom: 0;
+  }
+}
+
+.team {
+  margin-bottom: 70px;
+  &-list {
+    margin-top: 20px;
+  }
+  &-item {
+    &__image {
+      height: 350px;
+      @media (max-width: $breakpoint-md) {
+        height: 600px;
+      }
+      @media (max-width: $breakpoint-md) {
+        height: 350px;
+      }
+      & img {
+        object-fit: cover;
+      }
+    }
+    &__text {
+      background: $darkBlue;
+      padding: 20px;
+    }
+    &__name {
+      margin-bottom: 10px;
+    }
+    &__position {
+
+    }
+  }
+}

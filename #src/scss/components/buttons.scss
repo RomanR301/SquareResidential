@@ -2,7 +2,7 @@
 @import "../abstracts/variables";
 
 .btn {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   padding: 15px 45px;
@@ -17,11 +17,11 @@
     padding: 10px 30px;
   }
   &-primary {
-    color: $defaultText;
-    border: 2px solid $defaultText;
+    color: $darkBlue;
+    border: 2px solid $darkBlue;
     background: $whiteColor;
     &:hover {
-      background: $defaultText;
+      background: $darkBlue;
       color: $whiteColor;
     }
   }
@@ -31,7 +31,7 @@
     background: transparent;
     &:hover {
       background: $whiteColor;
-      color: $defaultText;
+      color: $darkBlue;
     }
   }
   &-link {
