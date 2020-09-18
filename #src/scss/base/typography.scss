@@ -55,7 +55,7 @@
 }
 
 .section-title {
-  @include fontSize(26, 45);
+  @include fontSize(26, 36);
   line-height: 1.19;
   color: $greyText;
   position: relative;
