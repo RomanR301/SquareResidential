@@ -1588,7 +1588,8 @@ section {
   }
 
   .footer-logo {
-    max-width: 170px;
+    max-width: 200px;
+    margin-bottom: 15;
   }
 
   .footer-description {
