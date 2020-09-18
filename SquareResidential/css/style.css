@@ -1795,9 +1795,21 @@ section {
     padding: 0;
   }
 
+  .footer-row .footer-column:nth-child(1) {
+    margin-bottom: 16px;
+  }
+
   .footer-column {
     width: 49%;
-    margin-bottom: 26px;
+    margin-bottom: 16px;
+  }
+
+  .footer-column:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 5px;
   }
 
   .team-item__image {
@@ -1851,7 +1863,7 @@ section {
   }
 
   .footer-copyright .copyright-privacy {
-    margin-bottom: 18px;
+    margin-bottom: 18 2px;
   }
 }
 
