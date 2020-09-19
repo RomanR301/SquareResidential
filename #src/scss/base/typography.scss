@@ -30,7 +30,8 @@
 }
 
 .heading-1 {
-  @include fontSize(30, 55);
+  @include fontSize(28, 36);
+  letter-spacing: 1.5px;
   line-height: 1.19;
 }
 
@@ -55,12 +56,14 @@
 }
 
 .section-title {
-  @include fontSize(26, 36);
+  @include fontSize(24, 32);
   line-height: 1.19;
   color: $greyText;
+  font-weight: 200;
   position: relative;
   text-align: center;
   margin-bottom: 60px;
+  letter-spacing: 2px;
   &:before {
     content: '';
     background: $greyText;

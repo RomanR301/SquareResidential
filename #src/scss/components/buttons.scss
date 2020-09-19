@@ -31,8 +31,9 @@
     color: $whiteColor;
     background: transparent;
     &:hover {
-      background: $whiteColor;
-      color: $darkBlue;
+      border-color: $brownColor;
+      background: $brownColor;
+      color: $whiteColor;
     }
   }
   &-link {
