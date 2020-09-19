@@ -1239,6 +1239,271 @@ section {
   margin-bottom: 10px;
 }
 
+.contact-form {
+  background: #1C5B80;
+  padding: 60px 0;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.form-control.form-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-control.form-submit button {
+  background: #f9f9f9;
+  color: #0D3146;
+}
+
+.form-control.form-submit button:hover {
+  background: #af6337;
+  color: #f9f9f9;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 2px solid #f9f9f9;
+  background: transparent;
+  width: 100%;
+  padding: 15px;
+  color: #f9f9f9;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  border-color: #af6337;
+}
+
+.form-control input:focus::-webkit-input-placeholder, .form-control textarea:focus::-webkit-input-placeholder {
+  color: #af6337;
+}
+
+.form-control input:focus::-moz-placeholder, .form-control textarea:focus::-moz-placeholder {
+  color: #af6337;
+}
+
+.form-control input:focus:-ms-input-placeholder, .form-control textarea:focus:-ms-input-placeholder {
+  color: #af6337;
+}
+
+.form-control input:focus::-ms-input-placeholder, .form-control textarea:focus::-ms-input-placeholder {
+  color: #af6337;
+}
+
+.form-control input:focus::placeholder,
+.form-control textarea:focus::placeholder {
+  color: #af6337;
+}
+
+.form-control input:focus:-ms-input-placeholder,
+.form-control textarea:focus:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #af6337;
+}
+
+.form-control input:focus::-ms-input-placeholder,
+.form-control textarea:focus::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #af6337;
+}
+
+.form-control input::-webkit-input-placeholder, .form-control textarea::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f9f9f9;
+  opacity: 1;
+  /* Firefox */
+  letter-spacing: .5px;
+}
+
+.form-control input::-moz-placeholder, .form-control textarea::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f9f9f9;
+  opacity: 1;
+  /* Firefox */
+  letter-spacing: .5px;
+}
+
+.form-control input:-ms-input-placeholder, .form-control textarea:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f9f9f9;
+  opacity: 1;
+  /* Firefox */
+  letter-spacing: .5px;
+}
+
+.form-control input::-ms-input-placeholder, .form-control textarea::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f9f9f9;
+  opacity: 1;
+  /* Firefox */
+  letter-spacing: .5px;
+}
+
+.form-control input::placeholder,
+.form-control textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f9f9f9;
+  opacity: 1;
+  /* Firefox */
+  letter-spacing: .5px;
+}
+
+.form-control input:-ms-input-placeholder,
+.form-control textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f9f9f9;
+}
+
+.form-control input::-ms-input-placeholder,
+.form-control textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f9f9f9;
+}
+
+.form-control textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-container .form-control:nth-child(1),
+.form-container .form-control:nth-child(2),
+.form-container .form-control:nth-child(3),
+.form-container .form-control:nth-child(4) {
+  width: 48.5%;
+}
+
+.map {
+  margin-bottom: 0;
+}
+
+.map-links {
+  margin-bottom: 30px;
+}
+
+.map-item {
+  color: #484849;
+  margin-right: 25px;
+}
+
+.map-item:last-child {
+  margin-right: 0;
+}
+
+.map-item i {
+  margin-right: 13px;
+}
+
+.map-item i:before {
+  color: #0D3146;
+  font-size: 18px;
+}
+
+.map-container {
+  position: relative;
+  height: 500px;
+}
+
+.map-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.map-container:before {
+  content: '';
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, #f9f9f9 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #f9f9f9 0%, rgba(255, 255, 255, 0) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.other-page {
+  height: 100vh;
+  margin-bottom: 0;
+}
+
+.other-page-image {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.other-page-image:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(13, 49, 70, 0.7);
+}
+
+.other-page-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.other-page-content {
+  z-index: 2;
+}
+
+.other-page-text {
+  z-index: 2;
+}
+
+.other-page-text h1 {
+  font-size: 200px;
+  line-height: 1;
+}
+
+.other-page-text h2 {
+  font-size: 35px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.other-page-text p {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.other-page-text a {
+  border: 2px solid transparent;
+}
+
+.other-page-text.thankyou-page h1 {
+  font-size: 100px;
+  font-weight: 200;
+}
+
 @media (min-width: 576px) {
   .col-sm-1 {
     -webkit-box-flex: 0;
@@ -1800,6 +2065,10 @@ section {
   .portfolio-view-all {
     height: 90px;
   }
+
+  .contact-form {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1846,6 +2115,23 @@ section {
 
   .team-item__image {
     height: 350px;
+  }
+
+  .other-page-text h1 {
+    font-size: 100px;
+  }
+
+  .other-page-text h2 {
+    font-size: 18px;
+  }
+
+  .other-page-text p {
+    font-size: 14px;
+  }
+
+  .other-page-text.thankyou-page h1 {
+    font-size: 54px;
+    margin-bottom: 10px;
   }
 }
 

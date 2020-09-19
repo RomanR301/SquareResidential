@@ -42,15 +42,6 @@
       font-style: normal;
       font-display: auto;
     }
-
-    @font-face {
-      font-family: altivo;
-      src: url(https://use.typekit.net/af/6c9135/00000000000000003b9b028b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/6c9135/00000000000000003b9b028b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/6c9135/00000000000000003b9b028b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");
-      font-weight: 400;
-      font-style: italic;
-      font-display: auto;
-    }
-
     @font-face {
       font-family: altivo;
       src: url(https://use.typekit.net/af/237a83/00000000000000003b9b028c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"), url(https://use.typekit.net/af/237a83/00000000000000003b9b028c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"), url(https://use.typekit.net/af/237a83/00000000000000003b9b028c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");
@@ -67,19 +58,12 @@
       font-display: auto;
     }
 
-    @font-face {
-      font-family: altivo;
-      src: url(https://use.typekit.net/af/3c7d5e/00000000000000003b9b028f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/3c7d5e/00000000000000003b9b028f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/3c7d5e/00000000000000003b9b028f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");
-      font-weight: 700;
-      font-style: italic;
-      font-display: auto;
-    }
   </style>
 </head>
 
 
 <body>
-  <header class="header header-home">
+  <header class="header">
     <div class="container">
       <div class="row m-0-mob align-middle align-justify">
         <a href="index.html" class="header-logo default-icon">
@@ -106,6 +90,9 @@
               <a href="contact.html">CONTACT</a>
             </li>
           </ul>
+          <!-- <button class="header-btn modalTrigger" data-modal="#callback">
+            WORK WITH US
+          </button> -->
         </div>
         <div class="hamburger">
           <span></span>
@@ -116,25 +103,100 @@
       </div>
     </div>
   </header>
+  <div class="body-padding"></div>
 <main>
-  <section class="error-page other-page --relative">
+  <section class="main-screen">
     <div class="container-fluid p-zero full-height">
-      <div class="other-page-image default-icon">
-        <img src="./img/404.jpg" alt="">
+      <div class="row m-0 full-height w-100">
+        <div class="main-screen__video full-height w-100">
+          <img class="home-screen__video_mobile" src="./img/detailed-main.jpg" alt="">
+        </div>
+        <div class="main-screen__box">
+          <h1 class="main-screen__title heading-1">
+            CONTACT US
+          </h1>
+          <div class="main-screen__text">
+            We believe that a single development can help shape a community. Our commitment to our projects extends to
+            our commitment of the communities that we serve.
+          </div>
+        </div>
       </div>
-      <div class="row full-height d-flex aign-middle align-center other-page-content">
-        <div class="col-md-5 col-xs-12 align-center align-middle d-flex flex-column">
-          <div class="other-page-text text-center">
-            <h1>404</h1>
-            <h2>Sorry, this page doesn’t exist</h2>
-            <p>Please, go to the main page and try again</p>
-            <a href="/" class="btn btn-primary">GO TO MAIN PAGE</a>
+    </div>
+  </section>
+  <section class="text-block">
+    <div class="container">
+      <div class="row align-center">
+        <div class="col-xs-12">
+          <h2 class="section-title">HEADING ON WHITE BG</h2>
+        </div>
+        <div class="col-md-10 col-xs-12">
+          <div class="text-block-paragraph text-center">
+            We are a customer-driven developer providing comprehensive expertise in all essential activities including
+            but not limited to market analysis, site selection, zoning, entitlements, due diligence, financing, legal
+            strategy, economic incentives, tax increment financing, design coordination, construction management and
+            property management. Through our superior Project Management, we guide clients through capitalization
+            strategy, occupancy strategy and occupancy cost analysis.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-form">
+    <div class="container">
+      <div class="row m-0 d-flex align-center">
+        <div class="col-md-8">
+          <form action="">
+            <div class="form-container">
+              <div class="form-control">
+                <input type="text" name="first_name" placeholder="First name">
+              </div>
+              <div class="form-control">
+                <input type="text" name="last_name" placeholder="Last Name">
+              </div>
+              <div class="form-control">
+                <input type="email" name="email" placeholder="Email">
+              </div>
+              <div class="form-control">
+                <input type="tel" name="phone" placeholder="Phone">
+              </div>
+              <div class="form-control">
+                <input type="text" name="subject" placeholder="Subject">
+              </div>
+              <div class="form-control form-textarea">
+                <textarea name="message" placeholder="Message"></textarea>
+              </div>
+              <div class="form-control form-submit">
+                <button type="submit" class="btn btn-secondary">SEND</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="map">
+    <div class="container-fluid p-zero">
+      <div class="row">
+        <div class="col-xs-12 d-flex align-center">
+          <div class="map-links d-flex align-middle">
+            <div class="map-item d-flex align-middle">
+              <i class="icon-marker"></i>2285 South 67th Street
+            </div>
+            <a href="tel:402496-2020" class="map-item d-flex align-middle">
+              <i class="icon-phone"></i>(402) 496-2020
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="map-container default-icon">
+            <img src="./img/map-placeholder.jpg" alt="map">
           </div>
         </div>
       </div>
     </div>
   </section>
 </main>
+
 <footer class="footer">
   <div class="container">
     <div class="row m-0-mob footer-row">

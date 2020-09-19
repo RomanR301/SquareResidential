@@ -1,0 +1,110 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.contact-form {
+  background: $backgroundBlue;
+  padding: 60px 0;
+  @media (max-width: $breakpoint-lg) {
+    padding: 40px 0;
+  }
+}
+ 
+.form-control {
+  width: 100%;
+  margin-bottom: 30px;
+  &.form-submit {
+    display: flex;
+    justify-content: center;
+    & button {
+      background: $whiteColor;
+      color: $darkBlue;
+      &:hover {
+        background: $brownColor;
+        color: $whiteColor;
+      }
+    }
+  }
+  & input, & textarea {
+    border: 2px solid $whiteColor;
+    background: transparent;
+    width: 100%;
+    padding: 15px;
+    color: $whiteColor;
+    font-size: inherit;
+    font-family: inherit;
+    &:focus {
+      outline: none;
+      border-color: $brownColor;
+      &::placeholder {
+        color: $brownColor;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $brownColor;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $brownColor;
+      }
+    }
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $whiteColor;
+      opacity: 1; /* Firefox */
+      letter-spacing: .5px;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $whiteColor;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: $whiteColor;
+    }
+  }
+  & textarea {
+    height: 120px;
+    resize: none;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & .form-control:nth-child(1), & .form-control:nth-child(2), & .form-control:nth-child(3), & .form-control:nth-child(4) {
+    width: 48.5%;
+  }
+}
+
+.map {
+  margin-bottom: 0;
+  &-links {
+    margin-bottom: 30px;
+  }
+  &-item {
+    color: $greyText;
+    margin-right: 25px;
+    &:last-child {
+      margin-right: 0;
+    }
+    & i {
+      margin-right: 13px;
+      &:before {
+        color: $darkBlue;
+        font-size: 18px;
+      }
+    }
+  }
+  &-container {
+    position: relative;
+    height: 500px;
+    & img {
+      object-fit: cover;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      background: linear-gradient(180deg, #f9f9f9 0%, rgba(255, 255, 255, 0) 100%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+    }
+  }
+}
