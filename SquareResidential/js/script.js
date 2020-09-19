@@ -1,3 +1,6 @@
+window.addEventListener("load", function () {
+    $(".swiper-container").addClass("loadSlider");
+});
 let front = {
   hamburger: $('.hamburger'),
   nav: $('.navbar'),
@@ -120,7 +123,37 @@ let modal = {
 jQuery(function () {
   front.init();
   modal.init();
-    
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 0,
+    slidesPerView: 6,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        360: {
+          slidesPerView: 3,
+        },
+        400: {
+           slidesPerView: 3,
+        },
+        767: {
+          slidesPerView: 6,
+        }
+      }
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 0,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
 });
 
 // $(window).scroll(function () {
