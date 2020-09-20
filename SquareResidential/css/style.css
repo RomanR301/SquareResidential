@@ -2198,9 +2198,9 @@ button.swiper-pagination-bullet {
   height: 500px;
 }
 
-.map-container img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.map-container iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .map-container:before {
@@ -2212,7 +2212,8 @@ button.swiper-pagination-bullet {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120px;
+  height: 60px;
+  pointer-events: none;
 }
 
 .other-page {
@@ -3043,6 +3044,10 @@ button.swiper-pagination-bullet {
 
   .team-item__image {
     height: 350px;
+  }
+
+  .map-container {
+    height: 400px;
   }
 
   .other-page-text h1 {
