@@ -84,20 +84,20 @@
     font-weight: 500;
     letter-spacing: 1.5px;
     @media (max-width: $breakpoint-lg) {
-      margin-bottom: 20px;
+      margin-bottom: 0px;
     }
-    @media (max-width: $breakpoint-sm) {
-      position: relative;
-      display: inline-block;
-      &:before {
-        content: '';
-        background: $redColor;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: -1px;
-      }
-    }
+    // @media (max-width: $breakpoint-sm) {
+    //   position: relative;
+    //   display: inline-block;
+    //   &:before {
+    //     content: '';
+    //     background: $redColor;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 2px;
+    //     bottom: -1px;
+    //   }
+    // }
   }
   &-logo {
     max-width: 150px;
@@ -127,7 +127,7 @@
     & li {
       margin-bottom: 10px;
       @media (max-width: $breakpoint-sm) {
-        margin-bottom: 4px;
+        margin-bottom: 0px;
       }
       & a {
         font-weight: 500;
