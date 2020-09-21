@@ -83,11 +83,50 @@
           </div>
         </div>
         <div class="col-xs-12">
-          <div class="map-container default-icon">
-            <iframe
+          <div class="map-container">
+            <div id='map'></div>
+            <script>
+              mapboxgl.accessToken = 'pk.eyJ1Ijoicm9tYW5yMzAxIiwiYSI6ImNrMWdiNHRzNDBsdDMzY3FsazczZ3NvcXkifQ.RbhqVO194w3peff7hCWzwA';
+              var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/romanr301/ckfcsplv09kx819nu2ymm4ca2',
+                center: [-77.0177, 38.901],
+                zoom: 16.05
+              });
+              var geojson = {
+                type: 'FeatureCollection',
+                features: [{
+                  type: 'Feature',
+                  geometry: {
+                    type: 'Point',
+                    coordinates: [-77.0176, 38.9014]
+                  },
+                  properties: {
+                    title: 'Mapbox',
+                    description: 'Washington, D.C.'
+                  }
+                }]
+              }
+              geojson.features.forEach(function (marker) {
+
+
+                var el = document.createElement('div');
+                el.className = 'marker';
+
+                // make a marker for each feature and add to the map
+                new mapboxgl.Marker(el)
+                  .setLngLat(marker.geometry.coordinates)
+                  .addTo(map);
+              });
+              var nav = new mapboxgl.NavigationControl();
+              map.addControl(nav, 'top-right');
+            </script>
+
+
+            <!-- <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10772.095752921437!2d-96.01872357452358!3d41.23913583933802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938c4e07ba7791%3A0x974718a9416a110a!2zMjI4NSBTIDY3dGggU3QsIE9tYWhhLCBORSA2ODEwNiwg0KHQv9C-0LvRg9GH0LXQvdGWINCo0YLQsNGC0Lgg0JDQvNC10YDQuNC60Lg!5e0!3m2!1suk!2sua!4v1600587208625!5m2!1suk!2sua"
               width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
+              tabindex="0"></iframe> -->
           </div>
         </div>
       </div>
