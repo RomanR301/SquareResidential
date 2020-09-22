@@ -198,8 +198,10 @@
                 container: 'map',
                 style: 'mapbox://styles/romanr301/ckfcsplv09kx819nu2ymm4ca2',
                 center: [-77.0177, 38.901],
-                zoom: 16.05
+                zoom: 15.05,
+                interactive: false
               });
+              // map.scrollZoom.disable();
               var geojson = {
                 type: 'FeatureCollection',
                 features: [{
@@ -215,7 +217,7 @@
                 }]
               }
               geojson.features.forEach(function (marker) {
-
+                
 
                 var el = document.createElement('div');
                 el.className = 'marker';

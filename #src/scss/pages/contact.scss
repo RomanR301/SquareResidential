@@ -15,14 +15,14 @@
   &.form-submit {
     display: flex;
     justify-content: center;
-    & button {
-      background: $whiteColor;
-      color: $darkBlue;
-      &:hover {
-        background: $brownColor;
-        color: $whiteColor;
-      }
-    }
+    // & button {
+    //   background: $whiteColor;
+    //   color: $darkBlue;
+    //   &:hover {
+    //     background: $brownColor;
+    //     color: $whiteColor;
+    //   }
+    // }
   }
   & input, & textarea {
     border: 2px solid $whiteColor;
@@ -120,7 +120,7 @@
 
 #map {
   width: 100%;
-  // height: 100%;
+  outline: none;
   height: 500px; 
   @media (max-width: $breakpoint-md) {
     height: 400px;
@@ -128,11 +128,13 @@
 
 }
 
+.mapboxgl-canvas {
+  outline: none;
+}
+
 .marker {
   background-image: url('../img/icons/markerMap.svg');
-  // background-size: cover;
   width: 59px;
   height: 83px;
-  // border-radius: 50%;
   cursor: pointer;
 }
