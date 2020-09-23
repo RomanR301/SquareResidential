@@ -129,6 +129,9 @@
       @media (max-width: $breakpoint-sm) {
         margin-bottom: 0px;
       }
+      & p {
+        font-weight: 300;
+      }
       & a {
         font-weight: 500;
         position: relative;

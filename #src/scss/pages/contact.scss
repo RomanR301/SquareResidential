@@ -1,6 +1,10 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.footer * {
+  font-size: 11px;
+}
+
 .contact-form {
   background: $backgroundBlue;
   padding: 60px 0;
