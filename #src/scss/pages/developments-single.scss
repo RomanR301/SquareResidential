@@ -47,6 +47,11 @@
   @media (max-width: $breakpoint-md) {
     height: 80px;
   }
+  & .single-item {
+    & img {
+      object-fit: cover;
+    }
+  }
 }
 
 .gallery-thumbs .swiper-slide {
@@ -103,7 +108,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
