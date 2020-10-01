@@ -3520,7 +3520,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 50px;
+  width: 60px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
