@@ -59,6 +59,12 @@ let front = {
       $(document).on('click', '.hamburger', function () {
           self.toggleNav();
       });
+      $(".lightGallery").lightGallery({
+        share: false,
+        autoplay: false,
+        getCaptionFromTitleOrAlt: false,
+        autoplayControls: false
+      });
   }
 };
 
@@ -125,6 +131,7 @@ jQuery(function () {
   modal.init();
   var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 0,
+    loop: true,
     slidesPerView: 6,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
@@ -146,6 +153,7 @@ jQuery(function () {
   });
   var galleryTop = new Swiper('.gallery-top', {
     spaceBetween: 0,
+    loop: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

@@ -1,8 +1,15 @@
+@include font("lg", "lg", "400", "normal");
+
+
 // @include font("Montserrat", "Montserrat-Regular", "400", "normal");
 // @include font("Montserrat", "Montserrat-Medium", "500", "normal");
 // @include font("Montserrat", "Montserrat-SemiBold", "600", "normal");
 // @include font("Mont", "Mont-SemiBold", "600", "normal");
 
+@font-face {
+  font-family: 'lg';
+  src: url('../fonts/icomoon.woff?h7lkbl') format('woff'),
+}
 
 @font-face {
   font-family: 'icomoon';
