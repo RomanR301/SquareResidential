@@ -3508,7 +3508,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .gallery-top .single-item {
   position: relative;
-  background: #e4e4e4;
+  background: #cacaca;
 }
 
 .gallery-top .single-item:before {
